@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		BF241CB01E7F2F40002A0171 /* Sora.h in Headers */ = {isa = PBXBuildFile; fileRef = BF241CAE1E7F2F40002A0171 /* Sora.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF241CC41E7F311C002A0171 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF241CC31E7F311C002A0171 /* Box.swift */; };
+		BF241CCF1E7F40E0002A0171 /* Sora.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BF241CCE1E7F40E0002A0171 /* Sora.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF241CAB1E7F2F40002A0171 /* Sora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF241CAE1E7F2F40002A0171 /* Sora.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sora.h; sourceTree = "<group>"; };
 		BF241CAF1E7F2F40002A0171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF241CC31E7F311C002A0171 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		BF241CCE1E7F40E0002A0171 /* Sora.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Sora.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,7 @@
 		BF241CA11E7F2F40002A0171 = {
 			isa = PBXGroup;
 			children = (
+				BF241CCE1E7F40E0002A0171 /* Sora.xcconfig */,
 				BF241CAD1E7F2F40002A0171 /* Sora */,
 				BF241CAC1E7F2F40002A0171 /* Products */,
 			);
@@ -47,9 +52,26 @@
 			isa = PBXGroup;
 			children = (
 				BF241CAE1E7F2F40002A0171 /* Sora.h */,
-				BF241CAF1E7F2F40002A0171 /* Info.plist */,
+				BF241CC61E7F313E002A0171 /* Types */,
+				BF241CC51E7F312F002A0171 /* Supporting Files */,
 			);
 			path = Sora;
+			sourceTree = "<group>";
+		};
+		BF241CC51E7F312F002A0171 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF241CAF1E7F2F40002A0171 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF241CC61E7F313E002A0171 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				BF241CC31E7F311C002A0171 /* Box.swift */,
+			);
+			name = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +118,7 @@
 					BF241CAA1E7F2F40002A0171 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 6XVY5G3U44;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -122,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF241CCF1E7F40E0002A0171 /* Sora.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF241CC41E7F311C002A0171 /* Box.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +167,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -195,6 +221,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -240,6 +267,7 @@
 		BF241CB41E7F2F40002A0171 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6XVY5G3U44;
@@ -253,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.Roxas.Sora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -260,6 +289,7 @@
 		BF241CB51E7F2F40002A0171 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6XVY5G3U44;
@@ -296,6 +326,7 @@
 				BF241CB51E7F2F40002A0171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
